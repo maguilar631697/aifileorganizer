@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — AI File Organizer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;color:#080808;background:#fff;line-height:1.8;-webkit-font-smoothing:antialiased}
+.header{background:#080808;color:#fff;padding:48px;text-align:center}
+.header h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:900;margin-bottom:8px}
+.header p{color:rgba(255,255,255,.5);font-size:14px}
+.content{max-width:720px;margin:0 auto;padding:64px 32px}
+h2{font-size:20px;font-weight:800;margin:40px 0 12px;letter-spacing:-.01em}
+h2:first-of-type{margin-top:0}
+p{font-size:15px;color:#444;margin-bottom:16px}
+ul{margin:0 0 16px 24px}
+li{font-size:15px;color:#444;margin-bottom:8px}
+.footer{text-align:center;padding:32px;font-size:13px;color:#888;border-top:1px solid #eee}
+.footer a{color:#0071E3;text-decoration:none}
+strong{color:#080808}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Privacy Policy</h1>
+  <p>AI File Organizer &mdash; Last updated February 10, 2026</p>
+</div>
+<div class="content">
+  <h2>Overview</h2>
+  <p>AI File Organizer ("the App") is developed by <strong>Arxyn Inc.</strong> We are committed to protecting your privacy. This policy explains what data the App accesses and how it is handled.</p>
+
+  <h2>Data Collection</h2>
+  <p><strong>We do not collect any personal data.</strong> The App does not send any information to Arxyn Inc. servers. We have no analytics, telemetry, tracking, or crash reporting that transmits data to us.</p>
+
+  <h2>File Access</h2>
+  <p>The App accesses files and folders on your Mac <strong>only when you explicitly select them</strong>. File contents are processed locally on your device using Apple's Vision framework for OCR and text extraction. Files are never uploaded to our servers.</p>
+
+  <h2>AI Provider Communication</h2>
+  <p>When you configure an AI provider (OpenAI, Anthropic, Google, xAI, or a custom endpoint), the App sends file metadata and extracted text to your chosen provider's API to generate rename suggestions. This communication is:</p>
+  <ul>
+    <li>Initiated only by your explicit action (scanning files)</li>
+    <li>Sent directly from your Mac to the provider — not through our servers</li>
+    <li>Governed by the provider's own privacy policy</li>
+    <li>Completely optional — you can use Ollama for 100% local processing</li>
+  </ul>
+
+  <h2>Local AI (Ollama)</h2>
+  <p>When using Ollama, all AI processing happens entirely on your Mac. No data leaves your device.</p>
+
+  <h2>API Keys</h2>
+  <p>Your API keys are stored securely in the <strong>macOS Keychain</strong> and are never transmitted to Arxyn Inc. or any third party.</p>
+
+  <h2>Audit Logs</h2>
+  <p>The App maintains a local audit log of file operations (renames, moves, undos) stored on your Mac in JSONL format. These logs never leave your device.</p>
+
+  <h2>Third-Party Services</h2>
+  <p>The App does not integrate with any third-party analytics, advertising, or tracking services.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>The App does not knowingly collect any information from children under 13.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this policy from time to time. Changes will be posted on this page with an updated date.</p>
+
+  <h2>Contact</h2>
+  <p>If you have questions about this privacy policy, contact us at <a href="mailto:support@arxyn.com" style="color:#0071E3;text-decoration:none">support@arxyn.com</a>.</p>
+</div>
+<div class="footer">&copy; 2026 <a href="https://arxyn.com">Arxyn Inc.</a> &mdash; <a href="/">AI File Organizer</a></div>
+</body>
+</html>

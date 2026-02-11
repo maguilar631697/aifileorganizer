@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — AI File Organizer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;color:#080808;background:#fff;line-height:1.8;-webkit-font-smoothing:antialiased}
+.header{background:#080808;color:#fff;padding:48px;text-align:center}
+.header h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:900;margin-bottom:8px}
+.header p{color:rgba(255,255,255,.5);font-size:14px}
+.content{max-width:720px;margin:0 auto;padding:64px 32px}
+h2{font-size:20px;font-weight:800;margin:40px 0 12px;letter-spacing:-.01em}
+h2:first-of-type{margin-top:0}
+p{font-size:15px;color:#444;margin-bottom:16px}
+ul{margin:0 0 16px 24px}
+li{font-size:15px;color:#444;margin-bottom:8px}
+.contact-box{background:#f5f5f5;padding:32px;margin:32px 0;text-align:center}
+.contact-box h3{font-size:18px;font-weight:800;margin-bottom:8px}
+.contact-box a{display:inline-flex;align-items:center;gap:8px;background:#080808;color:#fff;padding:14px 32px;font-size:15px;font-weight:700;text-decoration:none;margin-top:12px;letter-spacing:.05em;transition:background .2s}
+.contact-box a:hover{background:#0071E3}
+code{background:#f0f0f0;padding:2px 8px;font-size:13px;border-radius:2px}
+.faq h3{font-size:16px;font-weight:700;margin:24px 0 8px;color:#080808}
+.footer{text-align:center;padding:32px;font-size:13px;color:#888;border-top:1px solid #eee}
+.footer a{color:#0071E3;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Support</h1>
+  <p>AI File Organizer &mdash; We're here to help</p>
+</div>
+<div class="content">
+  <div class="contact-box">
+    <h3>Need Help?</h3>
+    <p style="color:#666">Email us and we'll get back to you within 24 hours.</p>
+    <a href="mailto:support@arxyn.com?subject=AI File Organizer Support">support@arxyn.com</a>
+  </div>
+
+  <h2>System Requirements</h2>
+  <ul>
+    <li>macOS 15.0 (Sequoia) or later</li>
+    <li>Apple Silicon or Intel Mac</li>
+    <li>An AI provider API key (OpenAI, Anthropic, Google, or xAI) — or Ollama for free local AI</li>
+  </ul>
+
+  <div class="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>How do I set up an AI provider?</h3>
+    <p>Open the app, go to <strong>Settings</strong>, select your preferred AI provider, and enter your API key. Keys are stored securely in your macOS Keychain.</p>
+
+    <h3>Can I use the app without an API key?</h3>
+    <p>Yes! Install <a href="https://ollama.com" target="_blank" style="color:#0071E3;text-decoration:none">Ollama</a> for free local AI processing. Run <code>brew install ollama</code> then <code>ollama pull llama3.2-vision:11b</code>. The app will auto-detect it.</p>
+
+    <h3>Is my data safe?</h3>
+    <p>Yes. Files are processed locally on your Mac. When using a cloud AI provider, only file metadata and extracted text are sent to the provider's API — never through our servers. With Ollama, nothing leaves your Mac at all. See our <a href="/privacy" style="color:#0071E3;text-decoration:none">Privacy Policy</a>.</p>
+
+    <h3>Can I undo file renames?</h3>
+    <p>Yes. Every operation is logged and reversible. Go to <strong>Recent Actions</strong> in the app to undo any rename or move.</p>
+
+    <h3>What file types are supported?</h3>
+    <p>The app works with all common file types including PDFs, images (JPEG, PNG, HEIC), documents (DOCX, TXT), and more. Vision analysis works with images and scanned PDFs.</p>
+
+    <h3>The app isn't detecting Ollama</h3>
+    <p>Make sure Ollama is running (<code>ollama serve</code>) and that you've enabled it in the app's Settings. The app only checks for Ollama if you've toggled it on.</p>
+
+    <h3>I'm getting an API error</h3>
+    <p>Check that your API key is valid and has sufficient credits/quota. Try regenerating your key from the provider's dashboard and re-entering it in Settings.</p>
+
+    <h3>How do I request a refund?</h3>
+    <p>Refunds are handled by Apple. Visit <a href="https://reportaproblem.apple.com" target="_blank" style="color:#0071E3;text-decoration:none">reportaproblem.apple.com</a> to request a refund.</p>
+  </div>
+
+  <h2>Report a Bug</h2>
+  <p>Found a bug? Email <a href="mailto:support@arxyn.com?subject=AI File Organizer Bug Report" style="color:#0071E3;text-decoration:none">support@arxyn.com</a> with:</p>
+  <ul>
+    <li>What happened vs. what you expected</li>
+    <li>Steps to reproduce</li>
+    <li>Your macOS version</li>
+    <li>Which AI provider you're using</li>
+  </ul>
+</div>
+<div class="footer">&copy; 2026 <a href="https://arxyn.com">Arxyn Inc.</a> &mdash; <a href="/">AI File Organizer</a> &mdash; <a href="/privacy">Privacy Policy</a></div>
+</body>
+</html>
